@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  font-family: '', sans-serif;
 }
+
 body {
   width: 100vw;
   height: auto;
@@ -24,16 +25,17 @@ body {
 }
 
 .heading {
-  margin-top: 3%;
-  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -41,21 +43,26 @@ h1 {
 .toggle {
   position: relative;
   display: flex;
-  background-color: gray;
-  height: 3rem;
-  width: 7rem;
+  height: 2.5rem;
+  width: 6rem;
   border-radius: 10rem;
   justify-content: center;
   align-items: center;
+  left: 25%;
+  background-color: #e7e7e7;;
 }
 
 .circle {
   position: absolute;
-  height: 2.5rem;
-  height: 6rem;
-  background-color: white;
-  border-radius: 10rem;
+  width: 2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 0;
+  left: 5px;
+  transition: all 0.5s;
+  background-color: orange;
 }
+
 .container hr {
   width: 100%;
   height: 2px;
@@ -104,6 +111,7 @@ h1 {
   position: relative;
   text-align: start;
   padding: 0px 20px;
+  outline: 0;
 }
 
 .box i {
@@ -136,21 +144,22 @@ h1 {
   text-align: center;
   gap: 0.5rem;
   padding: 5px;
-  box-shadow: 5px 5px 5px black;
+  background-color: #e7e7e7;
+  box-shadow: 5px 5px 5px cornflowerblue;
 }
 
 .emoji {
-  width: 100%;
-  /* transform: translateY(10px); */
-}
-
-.emoji {
+  width: 50px;
   font-size: 1.5rem;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(45deg);
 }
+
 .aliases {
   font-size: 1.1rem;
   font-weight: bolder;
-  text-transform: uppercase;
 }
 
 .description {
@@ -158,6 +167,7 @@ h1 {
 }
 
 .boxOfImojees:hover .emoji {
+  transform: rotate(0deg);
   cursor: pointer;
-  transform: scale(3);
+  transform: scale(5);
 }

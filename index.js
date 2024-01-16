@@ -16603,6 +16603,32 @@ const emojiList = [
 
 let textType = document.querySelector(".searchBar");
 let parent = document.querySelector(".searchContainer");
+let btn  = document.querySelector(".toggle");
+let circle  = document.querySelector(".circle");
+let xyz  = document.querySelector(".xyz");
+document.body.style.backgroundColor = "white";
+
+btn.addEventListener('click', () => {
+  if(document.body.style.backgroundColor === "white") {
+    document.body.style.backgroundColor = "black";
+    parent.style.color = "#222";
+    document.body.style.color = "white";
+    document.querySelector(".box i").style.color = "black";
+    circle.style.left = "61%";
+    circle.style.backgroundColor = "white";
+    btn.style.backgroundColor = "#222";
+    circle.style.transitionDuration = ".5s";
+  } else {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    parent.style.color = "black";
+    circle.style.left = "3%";
+    document.querySelector(".box i").style.color = "black";
+    circle.style.backgroundColor = "orange";
+    btn.style.backgroundColor = "#e7e7e7";
+    circle.style.transitionDuration = ".5s";
+  }
+})
 
 function displayEmojees(emojiList) {
 
@@ -16634,6 +16660,7 @@ textType.addEventListener("keyup", () => {
   // console.log(response);
   // console.log(typeof response);
   displayEmojees(response);
+
 });
 
 window.onload = () => displayEmojees(emojiList);
