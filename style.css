@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.heading {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  background-color: gray;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  height: 2.5rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 10rem;
+}
+.container hr {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1rem;
+  background-color: #222;
+}
+#formSearch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.searchBar {
+  width: 50%;
+  height: 3rem;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4rem;
+  outline: 0;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all;
+  cursor: pointer;
+}
+
+#submit:hover {
+  transition-delay: 0.1s;
+  background-color: black;
+  border: 2px solid #222;
+  color: white;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box input {
+  position: relative;
+  text-align: start;
+  padding: 0px 20px;
+}
+
+.box i {
+  position: absolute;
+  left: 72%;
+  cursor: pointer;
+}
+
+.searchContainer {
+  height: auto;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.boxOfImojees {
+  height: 10rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(86, 85, 85);
+  border-radius: 15px;
+  text-wrap: wrap;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.emoji {
+  width: 100%;
+  /* transform: translateY(10px); */
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+.aliases {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1.1rem;
+}
+
+.boxOfImojees:hover .emoji {
+  cursor: pointer;
+  transform: scale(3);
+}
