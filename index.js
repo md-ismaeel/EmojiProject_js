@@ -16614,8 +16614,8 @@ btn.addEventListener('click', () => {
     parent.style.color = "#222";
     document.body.style.color = "white";
     document.querySelector(".box i").style.color = "black";
-    circle.style.left = "61%";
-    circle.style.backgroundColor = "white";
+    circle.style.left = "55%";
+    circle.style.backgroundColor = "#e7e7e7";
     btn.style.backgroundColor = "#222";
     circle.style.transitionDuration = ".5s";
   } else {
