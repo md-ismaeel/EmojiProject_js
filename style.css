@@ -104,7 +104,7 @@ h1 {
 }
 
 .box {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@ h1 {
 
 .box i {
   position: absolute;
-  left: 72%;
+  left: 70%;
   cursor: pointer;
 }
 
