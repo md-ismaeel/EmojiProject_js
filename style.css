@@ -114,6 +114,8 @@ h1 {
   text-align: start;
   padding: 0px 20px;
   outline: 0;
+  border: 2px solid #6f6f6f;;
+  background-color: #e7e7e7;
 }
 
 .box i {
@@ -140,9 +142,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(86, 85, 85);
+  border: 2px solid #6f6f6f;
   border-radius: 15px;
   text-wrap: wrap;
+  word-wrap: break-word;
   text-align: center;
   gap: 0.5rem;
   padding: 5px;
@@ -160,11 +163,15 @@ h1 {
 }
 
 .aliases {
+  width: 100%;
+  word-wrap: break-word;
   font-size: 1.1rem;
   font-weight: bolder;
 }
 
 .description {
+  width: 100%;
+  word-wrap: break-word;
   font-size: 1.1rem;
 }
 
