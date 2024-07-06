@@ -16603,21 +16603,25 @@ const emojiList = [
 
 let textType = document.querySelector(".searchBar");
 let parent = document.querySelector(".searchContainer");
-let btn  = document.querySelector(".toggle");
-let circle  = document.querySelector(".circle");
-let xyz  = document.querySelector(".xyz");
+let btn = document.querySelector(".toggle");
+let circle = document.querySelector(".circle");
+let xyz = document.querySelector(".xyz");
+let fasolid = document.querySelector(".fa-solid");
+
 document.body.style.backgroundColor = "white";
 
-btn.addEventListener('click', () => {
-  if(document.body.style.backgroundColor === "white") {
+btn.addEventListener("click", () => {
+  if (document.body.style.backgroundColor === "white") {
     document.body.style.backgroundColor = "black";
-    parent.style.color = "#222";
+    parent.style.color = "white";
     document.body.style.color = "white";
     document.querySelector(".box i").style.color = "#222";
     circle.style.left = "55%";
-    circle.style.backgroundColor = "#e7e7e7";
+    circle.style.backgroundColor = "gray";
     btn.style.backgroundColor = "#222";
     circle.style.transitionDuration = ".5s";
+    textType.style.backgroundColor = "#222";
+
   } else {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
@@ -16627,11 +16631,11 @@ btn.addEventListener('click', () => {
     circle.style.backgroundColor = "orange";
     btn.style.backgroundColor = "#e7e7e7";
     circle.style.transitionDuration = ".5s";
+    textType.style.backgroundColor = "white";
   }
-})
+});
 
 function displayEmojees(emojiList) {
-
   parent.innerHTML = "";
   emojiList.forEach((e) => {
     let newDiv = document.createElement("div");
@@ -16643,7 +16647,6 @@ function displayEmojees(emojiList) {
 
     newDiv.classList.add("boxOfImojees");
     parent.appendChild(newDiv);
-
   });
 }
 
@@ -16660,7 +16663,6 @@ textType.addEventListener("keyup", () => {
   // console.log(response);
   // console.log(typeof response);
   displayEmojees(response);
-
 });
 
 window.onload = () => displayEmojees(emojiList);
